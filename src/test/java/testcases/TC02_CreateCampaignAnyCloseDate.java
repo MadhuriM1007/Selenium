@@ -83,9 +83,11 @@ public class TC02_CreateCampaignAnyCloseDate {
 		
 		WebDriverUtility wutil = new WebDriverUtility();
 		wutil.clickonWebElement(driver, closeDate);
+		
 		closeDate.sendKeys("07-07-2025");
 //		Actions act1= new Actions(driver);
 //		act1.click(closeDate).sendKeys("07-07-2025").perform();
+		Thread.sleep(4000);
 	}
 }
 
