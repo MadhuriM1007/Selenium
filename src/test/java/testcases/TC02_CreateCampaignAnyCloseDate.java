@@ -78,14 +78,17 @@ public class TC02_CreateCampaignAnyCloseDate {
 //		WebElement targetEle =driver.findElement(By.name("targetSize"));
 //		targetEle.clear();
 //		targetEle.sendKeys(tsize);
-		
+		Thread.sleep(4000);
 		WebElement closeDate = driver.findElement(By.name("expectedCloseDate"));
 		
 		WebDriverUtility wutil = new WebDriverUtility();
 		wutil.clickonWebElement(driver, closeDate);
+		
 		closeDate.sendKeys("07-07-2025");
 //		Actions act1= new Actions(driver);
 //		act1.click(closeDate).sendKeys("07-07-2025").perform();
+		Thread.sleep(4000);
 	}
+}
 
 
