@@ -22,7 +22,7 @@ import POM.HomePage;
 import POM.LoginPage;
 import PropertiesFileUtility.PropertiesUtility;
 import WebDriverUtility.WebDriverUtility;
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	
@@ -70,7 +70,7 @@ public class BaseClass {
 		if(BROWSER.equals("Edge"))
 		{
 
-			WebDriverManager.edgedriver().setup();
+			//WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
 		else if (BROWSER.equals("Chrome")) {
